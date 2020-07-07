@@ -1,0 +1,13 @@
+crossfiltered10:
+
+vertical:
+thresh 90
+first: erode(2,19,cross), dilate(3,600,rect)
+second: erode(2,19,cross), dilate(3,600,rect) //same as first for bitwise or
+main: dilate(0,500,rect)
+
+horizontal:
+thresh
+first: erode(17,3,cross), dilate(500,4,rect)
+second: erode(17,3,cross), dilate(500,4,rect)
+main: dilate(0,500,rect)
